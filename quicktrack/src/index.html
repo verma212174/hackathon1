@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTrack</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>QuickTrack</h1>
+        <nav>
+            <button id="track-tab">Track</button>
+            <button id="analytics-tab">Analytics</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="input-section">
+            <input type="text" id="task-input" placeholder="What are you working on?">
+            <input type="datetime-local" id="manual-start-time" class="hidden">
+            <input type="datetime-local" id="manual-end-time" class="hidden">
+            <button id="start-tracking">Start</button>
+            <button id="log-manual">Log Manual Event</button>
+        </div>
+        <div id="current-tasks">
+           
+        </div>
+        <h2>Past Tasks</h2>
+        <ul id="log-list"></ul>
+    </main>
+
+    <section id="analytics" class="hidden">
+        <h2>Summary and Reports</h2>
+        <div id="summary"></div>
+    </section>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
+
